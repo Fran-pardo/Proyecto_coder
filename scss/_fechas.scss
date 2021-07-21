@@ -1,0 +1,109 @@
+@import "colores";
+$width: 200px;
+
+@mixin condition ($color) {
+    background: ($color);
+
+    @if $color == $red {
+        color: yellow;
+    }
+    @else if $color == $blue {
+        color: red;
+    }
+    @else if $color == $yellow {
+        color: blue;
+    }
+    @else if $color == $violet {
+        color: black;
+    }
+    @else {
+        color: whitesmoke;
+    }
+}
+
+.div__contenedor--padre6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    line-height: 65px;
+    .div__contenedor--hijo--1 {
+        @include condition ($colorTextobg);
+        background-color: $colorTextobg;
+        display: flex;
+        align-content: center;
+        width: $width*3.6;
+        padding: 10px;
+        margin: 20px;
+        border: solid 2px $colorSeccionActiva;
+    }
+    .div__contenedor--hijo--2 {
+        @include condition ($red);
+        background-color: $red;
+        display: flex;
+        align-content: center;
+        width: $width*3.6;
+        padding: 10px;
+        margin: 20px;
+        border: solid 2px $colorSeccionActiva;
+    }
+    .div__contenedor--hijo--3 {
+        @include condition ($blue);
+        background-color: $blue;
+        display: flex;
+        align-content: center;
+        width: $width*3.6;
+        padding: 10px;
+        margin: 20px;
+        border: solid 2px $colorSeccionActiva;
+    }
+    .div__contenedor--hijo--4 {
+        @include condition ($yellow);
+        background-color: $yellow;
+        display: flex;
+        align-content: center;
+        width: $width*3.6;
+        padding: 10px;
+        margin: 20px;
+        border: solid 2px $colorSeccionActiva;
+    }
+    .div__contenedor--hijo--5 {
+        @include condition ($violet);
+        background-color: $violet;
+        display: flex;
+        align-content: center;
+        width: $width*3.6;
+        padding: 10px;
+        margin: 20px;
+        border: solid 2px $colorSeccionActiva;
+    }
+    .div__contenedor--hijo--6 {
+        @include condition ($colorTextobg);
+        background-color: $colorTextobg;
+        display: flex;
+        align-content: center;
+        width: $width*3.6;
+        padding: 10px;
+        margin: 20px;
+        border: solid 2px $colorSeccionActiva;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .div__contenedor--padre6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        line-height: 65px;
+        .div__contenedor--hijo6 {
+            background-color: $colorTextobg;
+            display: flex;
+            align-content: center;
+            width: $width*2;
+            padding: 10px;
+            margin: 20px;
+            border: solid 2px $colorSeccionActiva;
+        }
+    }
+}    

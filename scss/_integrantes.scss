@@ -1,0 +1,27 @@
+@import "colores";
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: $colorSeccionActiva;
+    background-clip: border-box;
+    border: 0.5px solid $colorSeccionActiva;
+    border-radius: .25rem;
+}
+
+
+h2 {
+    font-family: Ultra , serif;
+    color:$colorLetras;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.div__contenedor--carta {
+    background-color: $colorBackground;
+}
+

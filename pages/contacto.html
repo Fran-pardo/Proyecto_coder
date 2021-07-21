@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cumque repellat adipisci cum nesciunt repellendus tempore beatae tempora, mollitia reprehenderit temporibus sed harum.">
+    <meta name="keywords" content="Pearl Jam, Música, Grunge, Eddie Vedder, Matt Cameron, Mike Mccready, Stone Gossard, Jeff Ament">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="../Imagenes/Logo.svg">
+    <title>Contacto | Pearl Jam</title>
+    <!--Hoja de estilos-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ultra&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <header>
+        <img src="../Imagenes/Logo.svg" alt="Logo" width="200 px" class="header__imagenLogo">        
+        <a href="../index.html">
+            <h1 class="header__titulo">Pearl Jam</h1>
+        </a>
+        <nav class="header__nav">
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="discografia.html">Discografía</a>
+                </li>
+                <li>
+                    <a href="imagenes.html">Imágenes</a>
+                </li>
+                <li>
+                    <a href="integrantes.html">Integrantes</a>
+                </li>
+                <li>
+                    <a href="fechas.html">Fechas</a>
+                </li>
+                <li>
+                    <a href="contacto.html" class="header__seccionActiva">Contacto</a>
+                </li>
+            </ul>
+        </nav>         
+    </header>
+ 
+ <!--Comienza el main-->
+    <main class="lineHeight">
+        <h2>Contacto</h2>
+        <section class="section__contenedor--padre5">
+            <form action="">
+                
+                <div>
+                    <label for="name">Nombre :</label>
+                    <input type="text" name="name" id="name" placeholder="Escriba su nombre" required>
+                </div>
+                <br>
+                <div>
+                    <label for="apellido">Apellido :</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Escriba su apellido" required>
+                </div>
+                <br>
+                <div>
+                    <label for="sexo">Sexo :</label>
+                    <label for="sexo">Masculino</label>
+                    <input type="radio" name="sexo" value="masculino" id="masculino">
+                    <label for="sexo">Femenino</label>
+                    <input type="radio" name="sexo" value="femenino" id="femenino">
+                    <label for="sexo">Otro</label>
+                    <input type="radio" name="sexo" value="otro" id="otro">
+                </div>
+                <br>
+                <div>
+                    <label for="estado civil">Estado civil :</label>
+                    <select name="estado civil">
+                        <option value="soltero">Soltero</option>
+                        <option value="casado">Casado</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="email">E-mail :</label>
+                    <input type="email" name="email" id="email" placeholder="Escriba su correo" required>
+                </div>
+                <br>
+                <div>
+                    <label for="consulta">Consulta :</label>
+                    <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Deje su consulta (opcional)"></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="terms">Acepto términos y condiciones :</label>
+                    <input type="checkbox" name="terms" required>
+                </div>
+                <br>
+                <div>
+                    <input type="reset" value="Cancelar">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+
+ 
+ <hr>
+ 
+ <!--Comienza el footer-->
+    <footer>
+        <h4>Redes</h4>
+        <div class="alineadoCentro">
+            <a href="https://www.instagram.com/pearljam/" target="blank">
+                <img src="../imagenes/instagram.png" alt="Logo de Instagram" width="35px"></img>
+            </a>
+            <a href="https://www.youtube.com/channel/UClQT6Vnsm6BUm0I5kR26EkQ" target="blank">
+                <img src="../imagenes/youtube.png" alt="Logo de Youtube" width="35px" ></img>
+            </a>
+            <a href="https://open.spotify.com/artist/1w5Kfo2jwwIPruYS2UWh56?si=vTVHHZ7pQL2fFmlqBy0CRA&dl_branch=1" target="blank">
+                <img src="../imagenes/spotify.png" alt="Logo de Spotify" width="35px"></img>
+            </a>
+            <a href="https://www.facebook.com/PearlJam" target="blank">
+                <img src="../imagenes/facebook.png" alt="Logo de Facebook" width="35px"></img>
+            </a>
+            <a href="https://twitter.com/pearljam" target="blank">
+                <img src="../imagenes/twitter.png" alt="Logo de Twitter" width="35px"></img>
+            </a>
+        </div>
+        <p>Desarollado por Francisco Pardo</p>
+    </footer>
+ <script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>

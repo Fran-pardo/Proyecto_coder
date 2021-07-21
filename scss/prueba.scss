@@ -1,0 +1,108 @@
+@import "colores";
+@import "index";
+@import "integrantes";
+@import "discografia";
+@import "fechas";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $colorBackground;
+    font-family: Josefin Sans , sans-serif;
+    font-size: 1rem;
+    color: $colorLetras;
+}
+
+.header__seccionActiva {
+    color: $colorSeccionActiva;
+}
+
+.lineHeight {
+    line-height: 170%;
+}
+
+a{
+    text-decoration: none;
+}
+
+header {
+    border-bottom: solid 1px $colorLetras;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    padding: 10px;
+    align-items: center;
+    background: $colorBackground;
+    background: linear-gradient(90deg, #201f1f 0%, #201f1f 50%, #545454 100%);
+    a {
+        text-decoration: none;
+        color: $colorLetras;
+    }
+    .header__imagenLogo {
+        border-radius: 50%;
+        width: 100px;
+    }
+    .header__titulo {
+        font-family: Ultra , serif;
+        color: $colorLetras;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+        .header__nav {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            ul li {
+                color: $colorLetras;
+                list-style: none;
+                font-size: 130%;
+                display: inline-block;
+                padding: 25px;
+                &:hover {
+                    background-color:$colorHoverbg;
+                    a {
+                        color: $colorLetras;
+                        .header__seccionActiva {
+                            color: $colorSeccionActiva;
+                        }
+                    }
+                    
+                }    
+            }
+
+        }
+}
+
+.section__contenedor--padre5 {
+    background-color: $colorTextobg;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+h2 {
+    font-family: Josefin Sans , sans-serif;
+    color:$colorLetras;
+    text-align: center;
+    padding: 20px;
+}
+
+
+footer {
+    h4 {
+        text-align: center;
+        padding: 10px;
+    }
+    .alineadoCentro {
+        text-align: center;
+        list-style: none;
+    }
+}
+
+

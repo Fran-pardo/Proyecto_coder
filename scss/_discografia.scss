@@ -1,0 +1,32 @@
+@import "colores";
+
+.main__discografia {
+    padding: 10px;
+    margin: 10px;
+    .div__contenedor--padre4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .div__discografia {
+        width: 50%;
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .main__discografia {
+        padding: 10px;
+        margin: 10px;
+        .div__contenedor--padre4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .div__discografia {
+            width: 80%;
+            margin: 10px;
+        }
+    }
+}

@@ -1,0 +1,124 @@
+@import "colores";
+
+.main__index {
+    line-height: 130%;
+    .div__contenedor--padre {
+        width: 100%;
+        max-width: 90vw;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "imagen1 texto1"
+            "texto2 imagen2";
+        gap: 10px;
+        justify-items: center;
+        .div__contenedor--hijo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .imagen1 {
+            grid-area: imagen1;
+            .imagen {
+                width: 100%;
+                padding: 25px;
+                margin: 25px;
+            }
+        }
+        .texto1 {
+            grid-area: texto1;
+            .texto {
+                padding: 25px;
+                margin: 25px;
+                background-color:$colorTextobg;
+            }
+        }
+        .imagen2 {
+            grid-area: imagen2;
+            .imagen {
+                width: 100%;
+                padding: 25px;
+                margin: 25px;
+            }
+        }
+        .texto2 {
+            grid-area: texto2;
+            .texto {
+                padding: 25px;
+                margin: 25px;
+                background-color:$colorTextobg;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .main__index {
+        .div__contenedor--padre {
+            width: 100%;
+            max-width: 90vw;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: 
+                "imagen1"
+                "texto1"
+                "imagen2"
+                "texto2";
+            gap: 10px;
+            justify-items: center;
+        }
+
+        .div__contenedor--hijo {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .imagen1 {
+            grid-area: imagen1;
+            .imagen {
+                width: 100%;
+                padding: 5px;
+                margin: 5px;
+            }
+        }
+        .texto1 {
+            grid-area: texto1;
+            .texto {
+                padding: 5px;
+                margin: 5px;
+                background-color:$colorTextobg;
+            }
+        }
+        .imagen2 {
+            grid-area: imagen2;
+            .imagen {
+                width: 100%;
+                padding: 5px;
+                margin: 5px;
+            }
+        }
+        .texto2 {
+            grid-area: texto2;
+            .texto {
+                padding: 5px;
+                margin: 5px;
+                background-color:$colorTextobg;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+
+    .header__imagenLogo {
+        width: 35px;
+    }
+
+}
